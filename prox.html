@@ -1,0 +1,19 @@
+<head>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+  <input type="text" id="inputurl">
+  <button>launch site</button>
+  
+  <script>
+    function launcher(){
+      var x = document.createElement('iframe');
+      x.src = $('inputurl');
+      x.style.top = '0px';
+      x.style.left = '0px';
+      x.style.width = '100%'
+      x.style.height = '100%'
+      x.style.border = 'none';
+    };
+  </script>
+<body>
