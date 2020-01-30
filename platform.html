@@ -1,6 +1,27 @@
 <head>
-
+  <style>
+    body{
+      color: white;
+      background: black;
+    }
+    h1{
+      align-left: center;
+    }
+    button{
+      display: block;
+    }
+  </style>
 </head>
 <body>
-
+  <h1>Drag these to your bookmarks bar</h1>
+  <button href="javascript:var x = document.createElement('script');x.src = 'https://code.jquery.com/jquery-3.4.1.js';document.body.appendChild(x); $('iframe').remove();">remove all iframes</button>
+  
+  <h2>Tools</h2>
+  <button href="javascript:var hi=document.createElement('iframe');hi.src="https://www.desmos.com/scientific";hi.style.background='blue';hi.style.position='fixed';hi.style.width='30%';hi.style.height='50%';hi.style.top='40%';hi.style.left='70%';hi.id='hi';document.body.appendChild(hi);">scientific calculator</button>
+  <button href="javascript:var hi=document.createElement('iframe');hi.src="https://www.desmos.com/calculator";hi.style.background='blue';hi.style.position='fixed';hi.style.width='50%';hi.style.height='50%';hi.style.top='40%';hi.style.left='50%';hi.id='hi';document.body.appendChild(hi);">graphing calculator</button>
+  
+  <h2>page editing</h2>
+  <button href="javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0">edit page</button>
+  <button href="javascript:document.body.contentEditable = 'false'; document.designMode='off'; void 0">stop editing page</button>
+  <button href="javascript:var ha=confirm('confirm will replace the entire page with your html');if(ha===true){prompt();}">write you own html for page</button>
 </body>
