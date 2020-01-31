@@ -2,6 +2,8 @@ var jq = document.createElement('script');
 jq.src='https://code.jquery.com/jquery-3.4.1.js';
 document.head.appendChild(jq);
 
-var guts = "furure login here";
-//$("#secure").innerHTML = guts;
-getElementById("#secure").innerHTML = "hi";
+$(document).ready(function(){
+  var guts = "furure login here";
+  //$("#secure").innerHTML = guts;
+  document.getElementById("#secure").innerHTML = "hi";
+});
