@@ -7,6 +7,7 @@ a{
   padding: 7px;
   background: #333333;
   color: #cccccc;
+  left: 0px;
 }
 a:hover{
   background: green;
