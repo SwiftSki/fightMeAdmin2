@@ -1,4 +1,5 @@
 <head>
+  <link rel="stylesheet" type="text/css" href="index.css">
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
@@ -7,11 +8,8 @@
   
   <script>
     function launcher(){
-
-      //javascript:var nou = prompt("url - no https");
       var xp=document.createElement('iframe');
       xp.id='mainiframe';
-      //xp.src='#inputurl';
       xp.src=document.getElementById('inputurl');
       xp.style.position='fixed';
       xp.style.opacity='1';
