@@ -7,17 +7,21 @@
   
   <script>
     function launcher(){
-      alert('hi');
-      /*
-      var x = document.createElement('iframe');
-      x.src = '#inputurl';
-      x.style.top = '0px';
-      x.style.left = '0px';
-      x.style.width = '100%'
-      x.style.height = '100%'
-      x.style.border = 'none';
-      x.style.position = 'fixed';
-      */
+
+      javascript:var nou = prompt("url - no https");
+      var xp=document.createElement('iframe');
+      xp.id='mainiframe';
+      //xp.src='#inputurl';
+      xp.src=document.getElementById('inputurl');
+      xp.style.position='fixed';
+      xp.style.opacity='1';
+      xp.style.top='0%';
+      xp.style.left='0%';
+      xp.style.height='100%';
+      xp.style.width='100%';
+      xp.style.background='blue';
+      xp.style.zIndex=999;
+      document.body.appendChild(xp);
     };
   </script>
 <body>
