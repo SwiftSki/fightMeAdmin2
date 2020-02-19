@@ -15,9 +15,7 @@ var x = prompt('password','password');
 if(x==='password'){
    $("#secure").remove();
 }
-else{
-   $("#secure").remove();
-}
+
 /*
 $(document).ready(function(){
   var guts = "furure login here";
