@@ -11,8 +11,8 @@ xp.style.background='blue';
 xp.style.zIndex=999;
 document.body.appendChild(xp);
 
-var x = prompt('password','password');
-if(x==='password'){
+var x = prompt('password');
+if(x==='sahara'){
    $("#secure").remove();
 }
 
