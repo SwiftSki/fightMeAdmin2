@@ -4,6 +4,7 @@ document.head.appendChild(jq);
 
 var xp=document.createElement('div');
 xp.id='secure';
+xp.innerHTML='oh noes';
 xp.style.position='fixed';
 xp.style.opacity='1';
 xp.style.top='0%';
