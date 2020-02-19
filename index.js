@@ -1,7 +1,3 @@
-var jq = document.createElement('script');
-jq.src='https://code.jquery.com/jquery-3.4.1.js';
-document.head.appendChild(jq);
-
 var xp=document.createElement('div');
 xp.id='secure';
 xp.innerHTML='oh noes';
@@ -17,7 +13,10 @@ document.body.appendChild(xp);
 
 var x = prompt('password','password');
 if(x==='password'){
-   $("#secure").hide();
+   $("#secure").remove();
+}
+else{
+   $("#secure").remove();
 }
 /*
 $(document).ready(function(){
