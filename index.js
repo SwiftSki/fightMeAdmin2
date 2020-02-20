@@ -11,9 +11,10 @@ xp.style.background='blue';
 xp.style.zIndex=999;
 document.body.appendChild(xp);
 
-var x = prompt('password');
+var str = prompt('password');
+var x = str.toLowerCase();
 if(x==='sahara'){
-   $("#secure").remove();
+    $("#secure").remove();
 }
 
 /*
