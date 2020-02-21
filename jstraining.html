@@ -1,0 +1,21 @@
+<head>
+  <title>js training</title>
+  <style>
+    #documentation{
+      display: none;
+    }
+  </style>
+  <script>
+    function dispDocs(){
+      document.body.getElementById("documentation").display="inline";
+    }
+  </script>
+</head>
+<body>
+  <button>I am useless!</button>
+  
+  <button onclick="dispDocs()"></button>
+  <div id="documentation">
+    <iframe src="https://www.w3schools.com/js/default.asp"></iframe>
+  </div>
+</body>
