@@ -1,5 +1,5 @@
 var xp=document.createElement('div');
-xp.id='secure';
+xp.id='ohnoes';
 xp.innerHTML='oh noes';
 xp.style.position='fixed';
 xp.style.opacity='1';
@@ -14,13 +14,13 @@ document.body.appendChild(xp);
 var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)test\s*\=\s*([^;]*).*$)|^.*$/, "$1");
 if(test==="sahara"){
     x = "sahara";
-    $("#secure").remove();
+    $("#ohnoes").remove();
 }
 else{
     var str = prompt('password');
     var x = str.toLowerCase();
     if(x==='sahara'){
-        $("#secure").remove();
+        $("#ohnoes").remove();
         document.cookie="test=sahara";
     }
 }
