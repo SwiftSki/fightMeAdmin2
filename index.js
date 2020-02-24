@@ -11,12 +11,19 @@ xp.style.background='blue';
 xp.style.zIndex=999;
 document.body.appendChild(xp);
 
-var str = prompt('password');
-var x = str.toLowerCase();
-if(x==='sahara'){
+var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)test\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+if(test==="sahara"){
+    x = "sahara";
     $("#secure").remove();
 }
-
+else{
+    var str = prompt('password');
+    var x = str.toLowerCase();
+    if(x==='sahara'){
+        $("#secure").remove();
+        document.cookie="test=sahara";
+    }
+}
 /*
 $(document).ready(function(){
   var guts = "furure login here";
