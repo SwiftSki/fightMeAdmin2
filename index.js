@@ -19,6 +19,13 @@ function deleteCookie(cname) {
     var expires = "expires=" + d.toGMTString(); //Compose the expirartion date
     window.document.cookie = cname+"="+"; "+expires;//Set the cookie with name and the expiration date 
 }
+function getUrl(){
+    var target = window.location.search.split(?).pop();
+    return target;
+}
+function makeUrl(url){
+    window.open('https://fightmeadmin.netlify.com/content.html?' + url);
+}
 
 var xp=document.createElement('div');
 xp.id='ohnoes';
