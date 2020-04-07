@@ -10,20 +10,20 @@ xp.style.width='100%';
 xp.style.background='blue';
 xp.style.zIndex=999;
 document.body.appendChild(xp);
-
+/*
 var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)test\s*\=\s*([^;]*).*$)|^.*$/, "$1");
 if(test==="sahara"){
     x = "sahara";
     $("#ohnoes").remove();
 }
-else{
+else{*/
     var str = prompt('password');
     var x = str.toLowerCase();
     if(x==='sahara'){
         $("#ohnoes").remove();
         document.cookie="test=sahara";
     }
-}
+//}
 /*
 $(document).ready(function(){
   var guts = "furure login here";
