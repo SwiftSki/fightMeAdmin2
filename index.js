@@ -21,6 +21,7 @@ function deleteCookie(cname) {
 }
 function getUrl(){
     var target = window.location.search.split(?).pop();
+    alert(target);
     return target;
 }
 function makeUrl(url){
