@@ -20,7 +20,7 @@ function deleteCookie(cname) {
     window.document.cookie = cname+"="+"; "+expires;//Set the cookie with name and the expiration date 
 }
 function getUrl(){
-    var target = window.location.search.split(?).pop();
+    var target = window.location.search.split('?').pop();
     alert(target);
     return target;
 }
