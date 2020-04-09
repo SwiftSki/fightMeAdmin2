@@ -26,5 +26,6 @@ input{
   color: white;
   border-radius: 10px;
   width: 20%;
-  height: 20px;
+  height: 5%;
+  text-align: center;
 }
