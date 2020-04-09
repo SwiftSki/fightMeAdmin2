@@ -27,36 +27,32 @@ function makeUrl(url){
     window.open('https://fightmeadmin.netlify.com/content.html?' + url);
 }
 
-var xp=document.createElement('div');
-xp.id='ohnoes';
-xp.innerHTML='oh noes';
-xp.style.position='fixed';
-xp.style.opacity='1';
-xp.style.top='0%';
-xp.style.left='0%';
-xp.style.height='100%';
-xp.style.width='100%';
-xp.style.background='blue';
-xp.style.zIndex=999;
-document.body.appendChild(xp);
+function password(code){
+    var xp=document.createElement('div');
+    xp.id='ohnoes';
+    xp.innerHTML='oh noes';
+    xp.style.position='fixed';
+    xp.style.opacity='1';
+    xp.style.top='0%';
+    xp.style.left='0%';
+    xp.style.height='100%';
+    xp.style.width='100%';
+    xp.style.background='blue';
+    xp.style.zIndex=999;
+    document.body.appendChild(xp);
 
-var test = getCookie("test");
-if(test==="sahara"){
-    x = "sahara";
-    $("#ohnoes").remove();
-}
-else{
-    var str = prompt('password');
-    var x = str.toLowerCase();
-    if(x==='sahara'){
+    //for keeping poeple out
+    var test = getCookie("test");
+    if(test===code){
+        x = code;
         $("#ohnoes").remove();
-        window.document.cookie="test=sahara";
+    }
+    else{
+        var str = prompt('password');
+        var x = str.toLowerCase();
+        if(x===code){
+            $("#ohnoes").remove();
+            window.document.cookie="test="+code;
+        }
     }
 }
-/*
-$(document).ready(function(){
-  var guts = "furure login here";
-  //$("#secure").innerHTML = guts;
-  $("#secure").innerHTML = "hi";
-});
-*/
