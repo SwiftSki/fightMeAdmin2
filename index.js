@@ -45,13 +45,13 @@ function password(code){
     var test = getCookie("test");
     if(test===code){
         x = code;
-        $("#ohnoes").remove();
+        document.getElementById('ohnoes').remove();
     }
     else{
         var str = prompt('password');
         var x = str.toLowerCase();
         if(x===code){
-            $("#ohnoes").remove();
+            document.getElementById('ohnoes').remove();
             window.document.cookie="test="+code;
         }
     }
