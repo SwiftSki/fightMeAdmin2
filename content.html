@@ -39,12 +39,14 @@
     }
   </style>
   <script src="index.js"></script>
+  <script src="jquery-3.4.1.js"></script>
 
 </head>
 <body>
   <iframe id="main-content src="getUrl()"></iframe>
   <a href="index.html">back to main page</a>
   <script>
-    document.getElementById('main-content').src='https://drednot.io';
+    //document.getElementById('main-content').src='https://drednot.io';
+    $('#main-content').attr('src', 'https://drednot.io');
   </script>
 </body>
