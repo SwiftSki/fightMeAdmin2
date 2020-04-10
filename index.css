@@ -31,6 +31,9 @@ input{
   margin-right: auto;
   display: block;
 }
+input: active{
+  border: none;
+}
 button{
   border: none;
   background: #222222;
