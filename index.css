@@ -53,4 +53,5 @@ button: hover{
 #bottom{
   top: 80%;
   width: 100%;
+  position: fixed;
 }
